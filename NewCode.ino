@@ -3,7 +3,7 @@
 const int led = 13;
 const int releLeft = 4;
 const int releRight = 5;
-char dado = '0';
+char data = '0';
 
  
 SoftwareSerial bluetooht(2, 3);
