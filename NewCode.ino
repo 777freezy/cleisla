@@ -18,9 +18,9 @@ void setup() {
 
 void loop() {
   if(bluetooht.available()){
-    dado = bluetooht.read(); 
+    data = bluetooht.read(); 
     Serial.println(dado);
-      switch(dado){
+      switch(data){
         case '1':
           digitalWrite(releLeft, HIGH);
           digitalWrite(releRight, HIGH);
