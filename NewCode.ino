@@ -19,7 +19,7 @@ void setup() {
 void loop() {
   if(bluetooht.available()){
     data = bluetooht.read(); 
-    Serial.println(dado);
+    Serial.println(data);
       switch(data){
         case '1':
           digitalWrite(releLeft, HIGH);
@@ -35,10 +35,6 @@ void loop() {
           break;
         case '4':
           digitalWrite(releLeft, HIGH);
-          digitalWrite(releRight, LOW);
-          break;
-        default:
-          digitalWrite(releLeft, LOW);
           digitalWrite(releRight, LOW);
           break;
       }
